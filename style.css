@@ -313,6 +313,13 @@ button:active{
     background-color: #ffffff;
     outline: none;
     border: none;
-    font-size: 14x;
+font-size: 14x;
     font-weight: bold;
+}
+footer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
