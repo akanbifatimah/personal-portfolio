@@ -322,6 +322,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 footer p:nth-child(1){
     font-size: 30px;
@@ -330,8 +331,43 @@ footer p:nth-child(1){
     line-height: 10px;
 }
 footer p:nth-child(2){
-    font-size: 30px;
-    font-weight: bold;
-    color: #191919;
-    line-height: 10px;
+    font-size: 16px;
+    color: #7e7d7d;
+    width: 600px;
+    text-align: center;
+    margin-top: 15px;
+}
+.social-icons a{
+    width: 40px;
+    justify-content: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #e6e3e3;
+    margin: 20px 10px;
+    border-radius: 50%;
+}
+.social-icons{
+    display: flex;
+}
+.copyright{
+    color: #565555;
+    font-size: 13px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+.social-icons i{
+    color: #000000;
+}
+.social-icons a:hover{
+    background-color:#0000;
+    box-shadow: 2px 2px 12px rgba(0, 0,0, 0.2);
+    transition: all ease 0.5s;
+
+}
+.social-icons a:hover i{
+    color: #ffffff;
+    transition: all ease 0.5s;
 }
