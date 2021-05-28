@@ -23,14 +23,17 @@
                 <li><a href="#contact">contact</a></li>
                 <li><a href="#services">services</a></li>
             </ul>
+            <!-- toggle -->
+            <div class="toggle"></div>
         </nav>
         <!-- bio -->
         <div class="text-container" id="home">
         <p>Hello,</p>
         <p>I'm FATIMAH,</p>
         <p>I am a Software Engineer <br>& Designer </p>
-        <button class="hire-btn">Hire me</button>
-        <button class="down-cv">Download CV</button>
+        <a target="_blank" href="https://drive.google.com/file/d/1GexyJpcqhwfxbSL541ijeYhWcl7RPQLb/view?usp=drivesdk"><button class="hire-btn">Hire Me </button></a>
+        <a target="_blank" href="https://drive.google.com/file/d/1GexyJpcqhwfxbSL541ijeYhWcl7RPQLb/view?usp=drivesdk"><button class="down-cv">Download CV</button></a>
+
         </div>
     <!--model  -->
         <img src="IMAGE/BeautyPlus_20191231140020814_save-removebg-preview.png" class="model" alt="Fatimah">
@@ -56,8 +59,8 @@
                 your business, kindly contact me. I will make it as soon as possible.
             </p>
             <!-- button -->
-            <button class="hire-btn">Hire Me </button>
-            <button class="down-cv">Download CV</button>
+            <a target="_blank" href="https://drive.google.com/file/d/1GexyJpcqhwfxbSL541ijeYhWcl7RPQLb/view?usp=drivesdk"><button class="hire-btn">Hire Me </button></a>
+            <a target="_blank" href="https://drive.google.com/file/d/1GexyJpcqhwfxbSL541ijeYhWcl7RPQLb/view?usp=drivesdk"><button class="down-cv">Download CV</button></a>
         </div>
 
     </div>
@@ -87,7 +90,7 @@
                 I guarantee you will be satisfied with my output 
                 if not i will change it untill i give you a satisfactory result.
             </p>
-            <button>Read More...</button>
+           <a target="_blank" href="https://akanbifatimahwebdesign.netlify.app/"><button>Click to See Project</button></a> 
             </div>
             <div class="box-2">
             <span>2</span>
@@ -98,7 +101,7 @@
                     I guarantee you will be satisfied with my output 
                     if not i will change it untill i give you a satisfactory result.
             </p>
-            <button>Read More...</button>
+            <a target="_blank" href="https://akanbifatimahformsample.netlify.app/"><button>Click to See Project</button></a>
             </div>
             <div class="box-3">
             <span>3</span>
@@ -109,7 +112,7 @@
                     I guarantee you will be satisfied with my output 
                     if not i will change it untill i give you a satisfactory result.
             </p>
-            <button>Read More...</button>
+            <a target="_blank" href="https://akanbifatimahjscalculator.netlify.app/"><button>Click to See Project</button></a>
             </div>
             
         </div>
@@ -119,7 +122,7 @@
     <!-- contact me -->
     <div class="contact-me" id="contact">
     <p>If you have any project in mind </p>
-    <button>Contact me</button>
+    <a href="#list"><button>Contact me</button></a>
     </div>
     <!-- footer -->
     <footer>
@@ -129,7 +132,7 @@
         I will make it as soon as possible. 
         I guarantee you will be satisfied with my output 
     </p>
-        <div class="social-icons">
+        <div id="list" class="social-icons">
             <a target="_blank" href="https://facebook.com/akanbi.fatimah.7"><i class="fab fa-facebook-f"></i></a>
             <a target="_blank" href="https://www.instagram.com/fatimah_akanbi/"><i class="fab fa-instagram"></i></a>
             <a target="_blank" href="https://twitter.com/FatimahAkanbi2"><i class="fab fa-twitter"></i></a>
@@ -141,11 +144,22 @@
     <!-- attachecd social bar -->
     <div class="a-social-b">
         <a target="_blank" href="https://facebook.com/akanbi.fatimah.7"><i class="fab fa-facebook-f"></i></a>
-            <a target="_blank" href="https://www.instagram.com/fatimah_akanbi/"><i class="fab fa-instagram"></i></a>
-            <a target="_blank" href="https://twitter.com/FatimahAkanbi2"><i class="fab fa-twitter"></i></a>
-            <a target="_blank" href="https://youtube.com"><i class="fab fa-youtube"></i></a>
-            <a target="_blank" href="https://linkedin.com/in/fatimah-akanbi/746992159"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://www.instagram.com/fatimah_akanbi/"><i class="fab fa-instagram"></i></a>
+        <a target="_blank" href="https://twitter.com/FatimahAkanbi2"><i class="fab fa-twitter"></i></a>
+        <a target="_blank" href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+        <a target="_blank" href="https://linkedin.com/in/fatimah-akanbi/746992159"><i class="fab fa-linkedin"></i></a>
     </div>
-    
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/JQuery.js"> 
+        
+        $(document).ready(function(){
+            $('toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })   
+        
+    </script>
+
 </body>
 </html>
