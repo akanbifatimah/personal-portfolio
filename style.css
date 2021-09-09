@@ -174,7 +174,8 @@ button:active{
     margin-bottom: 10px;
 }
 .about-text p:nth-child(3),
-.about-text p:nth-child(4){
+.about-text p:nth-child(4),
+.about-text p:nth-child(5){
     font-family: calibri;
     color:#7e7d7d;
     font-size: 16px;
