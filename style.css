@@ -197,26 +197,26 @@ button:active{
 }
 .services-text p:nth-child(1){
     font-family: calibri;
-    font-weight: bold;
+    
     color: #3e3d3d;
     font-size: 30px;
     
 }
 .services-text p:nth-child(2){
     font-family: calibri;
-    font-weight: bold;
+    
     color: #3e3d3d;
     font-size: 15px;
     
 }
 .services-text p:nth-child(3){
     font-family: calibri;
-    font-weight: bold;
+   
     color: #7e7d7d;
 }
 .services-text p:nth-child(4){
     font-family: calibri;
-    font-weight: bold;
+   
     color: #7e7d7d;
     margin-top: 20px;
 }
