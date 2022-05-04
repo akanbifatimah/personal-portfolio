@@ -5,6 +5,7 @@
 }
 body{
     background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 
 }
 ul{
@@ -35,7 +36,14 @@ nav ul{
 
 }
 .toggle{
-    display: none;
+    cursor: pointer;
+    float: right;
+    height: 90px;
+    line-height: 90px !important;
+    color: #403e3e;
+    font-size: 26px;
+    display: none !important;
+
 }
 nav ul li a{
     margin: 30px;
@@ -153,7 +161,6 @@ button:active{
 .about-container img{
     height: 250px;
     width: 40%;
-
 }
 .about-text{
     width: 550px;
@@ -180,7 +187,7 @@ button:active{
     color:#7e7d7d;
     font-size: 16px;
     margin-top: 10px;
- 
+    
 }
 .about-text button{
     width: 120px;
@@ -191,32 +198,38 @@ button:active{
 }
 
 .services{
-    height: 600px;
+    height: 100%;
     background-color: #ffffff;
     padding: 2% 10% 0px 10%;
+  
 }
-.services-text p:nth-child(1){
+.services-text p{
     font-family: calibri;
+    font-weight: bolder;
+    color:#7e7d7d;
+    font-size: 20px;
+    margin-top: 10px;
     
-    color: #3e3d3d;
+}
+.services-text h3{
+    line-height: 2.5;
     font-size: 30px;
-    
+    text-align: center;
 }
-.services-text p:nth-child(2){
+/* .services-text p:nth-child(2){
     font-family: calibri;
-    
     color: #3e3d3d;
     font-size: 15px;
     
 }
 .services-text p:nth-child(3){
     font-family: calibri;
-   
+    
     color: #7e7d7d;
-}
+} */
+
 .services-text p:nth-child(4){
     font-family: calibri;
-   
     color: #7e7d7d;
     margin-top: 20px;
 }
@@ -324,12 +337,13 @@ font-size: 14x;
     font-weight: bold;
 }
 footer{
-    height: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin: 25px;
 }
 footer p:nth-child(1){
     font-size: 30px;
@@ -361,10 +375,8 @@ footer p:nth-child(2){
 .copyright{
     color: #565555;
     font-size: 13px;
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    transform: translateX(-50%);
+    text-align: center;
+    
 }
 .social-icons i{
     color: #000000;
@@ -433,11 +445,11 @@ footer p:nth-child(2){
         font-size: 20px;
     }
     .about-text p:nth-child(2){
-        font-size: 10px;
+        font-size: 17px;
     }
     .about-text p:nth-child(3),
     .about-text p:nth-child(4){
-        font-size: 14px;
+        font-size: 15px;
     }
     .services{
         height: auto;
@@ -463,7 +475,7 @@ footer p:nth-child(2){
         width: 160px;
     }
 }
-@media(max-width:750px){
+@media screen and (max-width:750px){
     section{
         background-image: none;
         background-color: #f7f7f7;
@@ -472,7 +484,7 @@ footer p:nth-child(2){
         display:none;
     }
     .toggle{
-        display: block;
+        display: block !important;
     }
     .text-container p:nth-child(2){
         line-height: 40px;
@@ -486,24 +498,45 @@ footer p:nth-child(2){
         width: 80%;
     }
     nav ul{
-       margin: 0px;
+       /* margin: 0px;
        padding: 0px;
-       background-color: #ebeef4;
+       background-color: #565555;
        flex-direction: column;
        position: fixed;
        left: 0;
        top: 0;
        width: 100%;
-       height: 100vh;
+      
        box-sizing: border-box;
        display: flex;
        justify-content: center;
        align-items: center;
        z-index: 1; 
+       */
+       position: absolute;
+       width: 100%;
+       background-color:#fff;
+       top: 0;
+       right: 0;
        display: none;
+       padding: 20px 40px;
+       box-sizing: border-box;
+       text-align: center;
+       margin-bottom: 30px;
+       
+    }
+    nav ul::before{
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom:  10px solid #172b4d;
+        position: absolute;
+        top: -10px;
+        right: 10px;
     }
     nav ul li{
         padding: 10px;
+        
 
     }
     nav ul li a{
@@ -511,6 +544,7 @@ footer p:nth-child(2){
         font-size: 1.4em;
         text-transform: uppercase;
         color:#5c5c5c;
+        
     }
     nav ul li a:hover{
         color:#121212;
@@ -519,7 +553,7 @@ footer p:nth-child(2){
         content: '\f0c9';
         font-family: fontAwesome;
         line-height: 30px;
-        z-index: 1;
+      
 
     }
     
@@ -528,10 +562,11 @@ footer p:nth-child(2){
         position: fixed;
         right: 25px;
         line-height: 0px;
+        /* display: block; */
 
     }
     nav.active ul{
-        display: flex !important;
+        display: block !important;
     }
     .about-container{
         top: 0px;

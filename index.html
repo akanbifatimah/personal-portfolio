@@ -11,6 +11,13 @@
 			src="https://kit.fontawesome.com/c8e4d183c2.js"
 			crossorigin="anonymous"
 		></script>
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<section>
@@ -18,7 +25,7 @@
 			<nav>
 				<!-- logo -->
 				<a href="#home" class="logo"> F </a>
-				<ul>
+				<ul class="navigation-menu">
 					<li><a href="#home" class="active">home</a></li>
 					<li><a href="#about">about</a></li>
 					<li><a href="#contact">contact</a></li>
@@ -26,7 +33,18 @@
 				</ul>
 				<!-- toggle -->
 				<div class="toggle"></div>
+				
 			</nav>
+			<!-- jQuery -->
+			<script type="text/javascript">
+
+				$(document).ready(function(){
+					$('.toggle').click(function(){
+						$('this').toggleClass('fa-times')
+						$('.navigation-menu').toggleClass('active')
+					})
+				})
+			</script>
 			<!-- bio -->
 			<div class="text-container" id="home">
 				<p>Hello,</p>
@@ -92,46 +110,46 @@
 		<!-- services -->
 		<div class="services" id="services">
 			<div class="services-text">
-				<p>Services</p>
-				<p>I create Responsive and Dynamic user interface that guarantees fast load times and lag free interaction.</p>
+				<h3>Services </h3>
+					<p>I create Responsive and Dynamic user interface that guarantees fast load times and lag free interaction.
 			
-				<p>
-					 I love structure and order and I also stand for quality. I love spending time on fixing little details 
+			
+					I love structure and order and I also stand for quality. I love spending time on fixing little details 
 					and optimizing and building web apps
 					If you have any project or if
 					you want to make a website for your business, kindly contact me. I can help actualise that
 					beautiful website user experience you have always wanted.
-				</p>
+					</p>
 			</div>
 			<div class="box-container" id="services">
 				<div class="box-1">
 					<span>1</span>
-					<p class="heading">Bethany's Pie Shop</p>
+					<p class="heading">Javascript Projects</p>
 					<p class="details">
 						Technology used-HTML, CSS including the use of media query and Flex
 
 						that included responsive design with Bootstrap classes and Good use Javascript.
 					</p>
-					<a target="_blank" href="https://my-pie-shop.netlify.app/"
-						><button>Click to See Project</button></a
+					<a target="_blank" href="./javascipt.html"
+						><button>Click to See Projects</button></a
 					>
 				</div>
 				<div class="box-2">
 					<span>2</span>
-					<p class="heading">Teemah's Task Tracker </p>
+					<p class="heading">React Projects </p>
 					<p class="details">
 						Technology used-HTML, CSS including the use of media query and Flex
 
 						that included responsive design with Bootstrap classes and Good use 
 						React Js in building different component for the user interface.
 					</p>
-					<a target="_blank" href="https://teemahs-task-tracker.netlify.app/"
+					<a target="_blank" href="./React.html"
 						><button>Click to See Project</button></a
 					>
 				</div>
 				<div class="box-3">
 					<span>3</span>
-					<p class="heading">Classic Recipe App</p>
+					<p class="heading">Comming soon..</p>
 					<p class="details">
 						Technology used-HTML, CSS including the use of media query and Flex
 
@@ -139,7 +157,7 @@
 					</p>
 					<a
 						target="_blank"
-						href="https://classicrecipe-app.web.app/"
+						href="https://github.com/akanbifatimah?tab=repositories"
 						><button>Click to See Project</button></a
 					>
 				</div>
@@ -201,15 +219,6 @@
 				><i class="fab fa-linkedin"></i
 			></a>
 		</div>
-		<!-- jQuery -->
-		<script type="text/javascript" src="js/JQuery.js">
-
-			$(document).ready(function(){
-			    $('toggle').click(function(){
-			        $('.toggle').toggleClass('active')
-			        $('nav').toggleClass('active')
-			    })
-			})
-		</script>
+		
 	</body>
 </html>
